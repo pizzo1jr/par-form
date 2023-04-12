@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css"/>
+  <title>Par Helper</title>
+</head>
+    <div class="container">
+        <div class="row">
+            <div  id="propertyHub" class="col">
+                <h3>Proeprty Hub</h3>
+                <form class="row g-2 align-items-center">
+                    <div class="col-md-4">
+                        <label for="sellerNameMismatch" class="col-form-label">Seller Mismatch:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="sellerNameMismatch" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="propertyType" class="col-form-label">Property Type:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="propertyType" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="lastDateOfSale" class="col-form-label">Last Date of Sale:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="lastDateOfSale" class="form-control">
+                    </div>
+                    <div class="col-md-10">
+                        <label for="phAdditinalNotes" class="form-label">Additional Notes:</label>
+                        <textarea class="form-control" id="phAdditinalNotes" rows="4"></textarea>
+                    </div>
+                    <div class="col-md-10">
+                        <button onclick="sellerNameMismatch()" type="submit" class="btn btn-primary">Copy</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <h3>Basic Info</h3>
+                <form class=" row g-2 align-items-center">
+                    <div class="col-md-10">
+                        <label for="infoDocumentUsed" class="col-form-label">Document Used:</label>
+                        <textarea id="infoDocumentUsed" class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="infoPageNumber" class="col-form-label">Page Number:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="infoPageNumber" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="infoEmd" class="col-form-label">EMD:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="InfoEmd" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="infoConcessions" class="col-form-label">Seller Concessions:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="infoConcessions" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="infoOtp" class="col-form-label">OTP:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="infoOtp" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="infoTransferTaxes" class="col-form-label">Transfer Taxes:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="infoTransferTaxes" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="infoCcd" class="col-form-label">CCD:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="infoCcd" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="infoFcd" class="col-form-label">FCD:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="infoFcd" class="form-control">
+                    </div>
+                    <div class="col-md-10">
+                        Signing Date:
+                    </div>
+                    <div class="col-md-4">
+                        <label for="infoBuyerSign" class="col-form-label">Buyer:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="infoBuyerSign" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="infoSellerSign" class="col-form-label">Seller:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="infoSellerSign" class="form-control">
+                    </div>
+                    <div class="col-md-10">
+                        <label for="phAdditinalNotes" class="form-label">Additional Notes:</label>
+                        <textarea class="form-control" id="phAdditinalNotes" rows="4"></textarea>
+                    </div>
+                    <div class="col-md-10">
+                        <button type="submit" class="btn btn-primary">Copy</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col">
+                <h3>Transfer Taxes</h3>
+                <form class="row g-2 align-items-center">
+                    <div class="col-md-10">
+                        <label for="ttDocumentUsed" class="col-form-label">Document Used:</label>
+                        <textarea id="ttDocumentUsed" class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="ttPageNumber" class="col-form-label">Page Number:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="ttPageNumber" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="ttWhoPaying" class="col-form-label">Who is Paying:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="ttWhoPaying" class="form-control">
+                    </div>
+                    <div class="col-md-10">
+                        <label for="ttBuyerPaid" class="col-form-label">Buyer Paid:</label>
+                        <textarea id="ttBuyerPaid" class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="col-md-10">
+                        <label for="ttSellerPaid" class="col-form-label">Seller Paid:</label>
+                        <textarea id="ttSellerPaid" class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="ttRespa" class="col-form-label">RESPA:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="ttRespa" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="ttPp" class="col-form-label">PP:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="ttPp" class="form-control">
+                    </div>
+                    <div class="col-md-10">
+                        <label for="phAdditinalNotes" class="form-label">Additional Notes:</label>
+                        <textarea class="form-control" id="phAdditinalNotes" rows="4"></textarea>
+                    </div>
+                    <div class="col-md-10">
+                        <button type="submit" class="btn btn-primary">Copy</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
