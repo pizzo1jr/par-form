@@ -1,12 +1,12 @@
 globalThis.myApp = {
-    copy: (propertyHubForm) => {
-        var propertyHubForm = document.getElementById("#property-hub-form");
+    copy: (form) => {
+        var form = document.getElementById('#property-hub-form');
         let copyText = [];
-        for (const key in propertyHubForm) {
-            if (Object.hasOWnProperty.call(propertyHubForm, key)) {
-                const val = propertyHubForm[key].value;
+        for (const key in form) {
+            if (Object.hasOWnProperty.call(form, key)) {
+                const val = form[key].value;
                 if (val) {
-                    copyText.push(propertyHubForm [key].value);
+                    copyText.push(form [key].value);
                 }
             }
         }
@@ -17,4 +17,4 @@ globalThis.myApp = {
     }
 };
 
-button.addEventListener("click". globalThis.myApp.copy);
+// object.addEventListener("click". globalThis.myApp);
