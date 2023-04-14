@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
   <meta charset="UTF-8">
@@ -7,13 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css"/>
-  <title>Par Helper</title>
+  <title>Par-Form</title>
+  <base href="/" />
 </head>
+
+
+<body>
     <div class="container">
         <div class="row">
             <div  id="propertyHub" class="col">
-                <h3>Proeprty Hub</h3>
-                <form class="row g-2 align-items-center">
+                <h3>Property Hub</h3>
+                <form id="property-hub-form" class="row g-2 align-items-center">
                     <div class="col-md-4">
                         <label for="sellerNameMismatch" class="col-form-label">Seller Mismatch:</label>
                     </div>
@@ -37,7 +41,7 @@
                         <textarea class="form-control" id="phAdditinalNotes" rows="4"></textarea>
                     </div>
                     <div class="col-md-10">
-                        <button  type="submit" class="btn btn-primary">Copy</button>
+                        <button  type="button" onclick="globalThis.myApp.copy(propertyHubInfo)" class="btn btn-primary">Copy</button>
                     </div>
                 </form>
             </div>
@@ -177,7 +181,7 @@
             </div>
         </div>
     </div>
-<body>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
 
