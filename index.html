@@ -2,23 +2,23 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/style.css"/>
-  <title>Par-Form</title>
-  <script src="./assets/js/script.js"></script>
-  <base href="/" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Par-Form</title>
+    <script src="assets/js/script.js"></script>
+    <base href="/" />
 </head>
 
 
 <body>
     <div class="container">
         <div class="row">
-            <div  id="propertyHub" class="col">
+            <div id="propertyHub" class="col">
                 <h3>Property Hub</h3>
-                <form id="property-hub-form" class="row g-2 align-items-center">
+                <form id="property-hub-form" name="Property Hub" class="row g-2 align-items-center">
                     <div class="col-md-4">
                         <label for="sellerNameMismatch" class="col-form-label">Seller Mismatch:</label>
                     </div>
@@ -35,35 +35,35 @@
                         <label for="lastDateOfSale" class="col-form-label">Last Date of Sale:</label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" id="lastDateOfSale" class="form-control">
+                        <input type="date" id="lastDateOfSale" class="form-control">
                     </div>
                     <div class="col-md-10">
                         <label for="phAdditinalNotes" class="form-label">Additional Notes:</label>
                         <textarea class="form-control" id="phAdditinalNotes" rows="4"></textarea>
                     </div>
                     <div class="col-md-10">
-                        <button  type="button" onclick="myApp.copy('property-hub-form')" class="btn btn-primary">Copy</button>
+                        <button type="button" onclick="copy('property-hub-form')" class="btn btn-primary">Copy</button>
                     </div>
                 </form>
             </div>
             <div class="col">
                 <h3>Basic Info</h3>
-                <form class=" row g-2 align-items-center">
+                <form id="basic-info-form" name="Basic Info" class="row g-2 align-items-center">
                     <div class="col-md-10">
                         <label for="infoDocumentUsed" class="col-form-label">Document Used:</label>
                         <textarea id="infoDocumentUsed" class="form-control" rows="3"></textarea>
                     </div>
                     <div class="col-md-4">
-                        <label for="infoPageNumber" class="col-form-label">Page Number:</label>
+                        <label for="infoPurchasePrice" class="col-form-label">Purchase Price:</label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" id="infoPageNumber" class="form-control">
+                        <input type="text" id="infoPurchasePrice" class="form-control">
                     </div>
                     <div class="col-md-4">
                         <label for="infoEmd" class="col-form-label">EMD:</label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" id="InfoEmd" class="form-control">
+                        <input type="text" id="infoEmd" class="form-control">
                     </div>
                     <div class="col-md-4">
                         <label for="infoConcessions" class="col-form-label">Seller Concessions:</label>
@@ -87,13 +87,13 @@
                         <label for="infoCcd" class="col-form-label">CCD:</label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" id="infoCcd" class="form-control">
+                        <input type="date" id="infoCcd" class="form-control">
                     </div>
                     <div class="col-md-4">
                         <label for="infoFcd" class="col-form-label">FCD:</label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" id="infoFcd" class="form-control">
+                        <input type="date" id="infoFcd" class="form-control">
                     </div>
                     <div class="col-md-10">
                         Signing Date:
@@ -102,26 +102,26 @@
                         <label for="infoBuyerSign" class="col-form-label">Buyer:</label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" id="infoBuyerSign" class="form-control">
+                        <input type="date" id="infoBuyerSign" class="form-control">
                     </div>
                     <div class="col-md-4">
                         <label for="infoSellerSign" class="col-form-label">Seller:</label>
                     </div>
                     <div class="col-md-6">
-                        <input type="text" id="infoSellerSign" class="form-control">
+                        <input type="date" id="infoSellerSign" class="form-control">
                     </div>
                     <div class="col-md-10">
-                        <label for="phAdditinalNotes" class="form-label">Additional Notes:</label>
-                        <textarea class="form-control" id="phAdditinalNotes" rows="4"></textarea>
+                        <label for="biAdditinalNotes" class="form-label">Additional Notes:</label>
+                        <textarea class="form-control" id="biAdditinalNotes" rows="4"></textarea>
                     </div>
                     <div class="col-md-10">
-                        <button type="submit" class="btn btn-primary">Copy</button>
+                        <button type="button" onclick="copy('basic-info-form')" class="btn btn-primary">Copy</button>
                     </div>
                 </form>
             </div>
             <div class="col">
                 <h3>Transfer Taxes</h3>
-                <form class="row g-2 align-items-center">
+                <form id="transfer-taxes-form" name="Transfer Taxes" class="row g-2 align-items-center">
                     <div class="col-md-10">
                         <label for="ttDocumentUsed" class="col-form-label">Document Used:</label>
                         <textarea id="ttDocumentUsed" class="form-control" rows="3"></textarea>
@@ -159,11 +159,11 @@
                         <input type="text" id="ttPp" class="form-control">
                     </div>
                     <div class="col-md-10">
-                        <label for="phAdditinalNotes" class="form-label">Additional Notes:</label>
-                        <textarea class="form-control" id="phAdditinalNotes" rows="4"></textarea>
+                        <label for="ttAdditinalNotes" class="form-label">Additional Notes:</label>
+                        <textarea class="form-control" id="ttAdditinalNotes" rows="4"></textarea>
                     </div>
                     <div class="col-md-10">
-                        <button type="submit" class="btn btn-primary">Copy</button>
+                        <button type="button" onclick="copy('transfer-taxes-form')" class="btn btn-primary">Copy</button>
                     </div>
                 </form>
             </div>
@@ -172,10 +172,10 @@
     <div class="container mt-3">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
-                <h3>Copy/Delete All</h3> 
+                <h3>Copy/Delete All</h3>
             </div>
             <div class="col-md-9 ">
-                <button type="submit" class="btn btn-success">Copy All</button>
+                <button type="button" onclick="copyAll('transfer-taxes-form')" class="btn btn-success">Copy All</button>
             </div>
             <div class="col-md-3">
                 <button type="delete" class="btn btn-danger">Delete All</button>
@@ -184,6 +184,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-   
+
 
 </body>
+
+</html>
