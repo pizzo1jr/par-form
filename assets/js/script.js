@@ -46,3 +46,8 @@ function convertFormToTextArray(form) {
   if (output.length > 0) output.unshift(`${form.name}`);
   return output;
 }
+
+function clearFunction(formElementId) {
+  var element = document.getElementById(formElementId);
+  element.reset()
+}
